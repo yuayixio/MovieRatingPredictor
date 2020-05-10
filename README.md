@@ -19,6 +19,7 @@ Explain special stuff here (e.g., things an evaluator has to know to evaluate yo
 ```
 	├── README.md 							<-- this file. insert group members here
 	├── __init__.py 						<-- makes this file a packages, requrired for test.py
+	├── .gitignore 						    <-- prevents you from submitting several clutter files
 	├── data
 	│   ├── modeling
 	│   │   ├── dev 						<-- your development set goes here
