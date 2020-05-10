@@ -27,7 +27,7 @@ class TestSubmission(unittest.TestCase):
         """
         self.assertFalse(self.test_data_with_rating["rating"].isnull().values.any())
 
-    def ratings_in_test_data_with_ratings_is_float(self):
+    def test_ratings_in_test_data_with_ratings_is_float(self):
         """
         test if prediction dataframe's column "rating" is of type float
         """
