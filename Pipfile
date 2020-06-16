@@ -12,10 +12,9 @@ matplotlib = "*"
 ipykernel = "*"
 jupyter = "*"
 jupyterlab = "*"
-surprise = "*"
-sklearn = "*"
-timeit = "*"
 seaborn = "*"
+scipy = "*"
+scikit-learn = "*"
 
 [requires]
 python_version = "3.8"
