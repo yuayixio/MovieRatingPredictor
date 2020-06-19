@@ -15,6 +15,7 @@ jupyterlab = "*"
 seaborn = "*"
 scipy = "*"
 scikit-learn = "*"
+scikit-surprise = "*"
 
 [requires]
 python_version = "3.8"
