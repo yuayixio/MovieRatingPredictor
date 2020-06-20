@@ -1,6 +1,8 @@
 BDA-analytics-challenge
 ==============================
 
+![Class Overview](data/UML Diagram.png "Class Overview")
+
 ## Group Members:
 - Forename: Carmen
 - Surname: Müller
