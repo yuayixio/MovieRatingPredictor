@@ -91,3 +91,6 @@ models/*
 /notebooks/Untitled1.ipynb
 /notebooks/test.csv
 /Untitled.ipynb
+
+# Data
+/data/preprocessed/omdb_cleaned.csv
