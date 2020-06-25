@@ -16,6 +16,7 @@ seaborn = "*"
 scipy = "*"
 scikit-learn = "*"
 scikit-surprise = "*"
+nbdime = "*"
 
 [requires]
 python_version = "3.8"
