@@ -19,10 +19,6 @@ def knn_preprocessing(omdb_columns):
     for i in indices:
         omdb = omdb.drop([i], axis=0, )
 
-    # Replace for Series, PG and awards NaN with 0 and handle accordingly
-    for i in range(9, 14):
-        omdb.iloc[:, i] = omdb.iloc[:, i].fillna(0)
-
     # Fill NaN Runtime
     omdb.loc[:, 'Runtime'] = omdb.loc[:, 'Runtime'].fillna(omdb.loc[:, 'Runtime'].median())
     # Fill NaN for imdbVotes
@@ -44,8 +40,13 @@ def knn_preprocessing(omdb_columns):
     omdb['Metacritic'] = omdb['Metacritic'].where(~omdb['Metacritic'].isna(), omdb['Metacritic'].mean())
 
     merged_data = ratings.merge(omdb, how='left', on='imdbID')
-    merged_data = merged_data.drop(columns={'Unnamed: 0', 'Language'})
-
+    merged_data = merged_data.drop(columns={'Unnamed: 0'})
+    
+    # Replace for Series, PG and awards NaN with 0 and handle accordingly
+    for i in ['PG_Rating', 'Available_languages', 'Oscars_won', 'Oscars_nominated',
+       'Golden_globe_won', 'Golden_globe_nominated']:
+        merged_data.iloc[:, i] = merged_data.iloc[:, i].fillna(0)
+    
     # convert imdbID from string to float
     merged_data['imdbID'] = merged_data['imdbID'].str.replace(r'tt', '')
     merged_data['imdbID'] = merged_data['imdbID'].astype(float)
@@ -53,5 +54,7 @@ def knn_preprocessing(omdb_columns):
     # Jetzt einfach ma5 mean() eingefüllt
     for i in range(3, 15):
         merged_data.iloc[:, i] = merged_data.iloc[:, i].fillna(merged_data.iloc[:, i].median())
-
+    
+        
+    
     return merged_data
