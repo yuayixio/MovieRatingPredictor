@@ -57,4 +57,7 @@ def knn_preprocessing(omdb_columns):
     for i in range(3, 15):
         merged_data.iloc[:, i] = merged_data.iloc[:, i].fillna(merged_data.iloc[:, i].median())
 
+    merged_data['Awards'] = merged_data['Oscars_won'] + merged_data['Golden_globe_won'] + merged_data['Oscars_nominated'] + merged_data['Golden_globe_nominated']
+    merged_data = merged_data.drop(columns={'Oscars_won', 'Oscars_nominated','Golden_globe_won', 'Golden_globe_nominated'})
+
     return merged_data
