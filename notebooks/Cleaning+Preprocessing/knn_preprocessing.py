@@ -50,11 +50,13 @@ def knn_preprocessing(omdb_columns):
     # convert imdbID from string to float
     merged_data['imdbID'] = merged_data['imdbID'].str.replace(r'tt', '')
     merged_data['imdbID'] = merged_data['imdbID'].astype(float)
-
+    
     # Jetzt einfach ma5 mean() eingefüllt
     for i in range(3, 15):
         merged_data.iloc[:, i] = merged_data.iloc[:, i].fillna(merged_data.iloc[:, i].median())
     
-        
+    # Merge Award colums to display just an award score and drop unused columns
+    merged_data['Awards'] = merged_data['Oscars_won']+merged_data['Golden_globe_won']+merged_data['Oscars_nominated']+merged_data['Golden_globe_nominated']    
+    merged_data = merged_data.drop(columns={'Oscars_won', 'Oscars_nominated','Golden_globe_won', 'Golden_globe_nominated'})
     
     return merged_data
