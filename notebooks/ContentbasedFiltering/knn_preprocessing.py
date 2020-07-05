@@ -1,12 +1,14 @@
 ### kNN Preprocessing
 import pandas as pd
-
+from sklearn.preprocessing import MultiLabelBinarizer
 
 def knn_preprocessing(omdb_columns):
     movies = pd.read_csv('../../data/preprocessed/movies_id_updated.csv')
     omdb = pd.read_csv('../../data/preprocessed/omdb_cleaned.csv')
     ratings = pd.read_csv('../../data/preprocessed/ratings_clean_std_0.csv')
+    genres = pd.read_csv('../../data/raw/genres.csv', sep=',')
 
+    
     # Select relevant columns
     omdb = omdb[omdb_columns]
 
@@ -14,6 +16,15 @@ def knn_preprocessing(omdb_columns):
     imdb_ids = pd.DataFrame(movies['imdbID'].unique()).rename(columns={0: 'imdbID'})
     omdb = imdb_ids.merge(omdb, how='left', on='imdbID')
 
+     #Preprocess movie and genre data
+    movies = movies.drop(columns={'spanishTitle','imdbPictureURL','rtID','rtPictureURL'})
+    movies['imdbID'] = movies['imdbID'].str.replace(r'tt', '')
+    movies['imdbID'] = movies['imdbID'].astype(float) 
+    mapping = movies[['id', 'imdbID']].rename(columns={'id':'movieID'})
+    
+    #group genres
+    genres_grouped = genres.merge(mapping, on='movieID').groupby('imdbID')['genre'].apply(list).reset_index(name='genres')
+    
     # Dropping the 10 almost empty movies
     indices = omdb[omdb['imdbRating'].isna()]['imdbID'].index
     for i in indices:
@@ -59,5 +70,18 @@ def knn_preprocessing(omdb_columns):
 
     merged_data['Awards'] = merged_data['Oscars_won'] + merged_data['Golden_globe_won'] + merged_data['Oscars_nominated'] + merged_data['Golden_globe_nominated']
     merged_data = merged_data.drop(columns={'Oscars_won', 'Oscars_nominated','Golden_globe_won', 'Golden_globe_nominated'})
-
-    return merged_data
+   
+    #drop Series and rating since they have little impact on neighbors (shonw in PCA)
+    merged_data = merged_data.drop(columns={'Series','PG_Rating'})
+    
+    #add genres to data and encode them
+    merged_g = merged_data.merge(genres_grouped, how='right', on='imdbID')
+    mlb = MultiLabelBinarizer()
+    genres_encoded = mlb.fit_transform(genres_grouped['genres'])
+    genres_grouped = genres_grouped.join(pd.DataFrame(genres_encoded))
+    genres_grouped = genres_grouped.sort_values('imdbID').drop(columns={'genres'})
+    merged_g = merged_data.merge(genres_grouped, how='right', on='imdbID')
+    merged_g=merged_g.dropna()
+    #drop unused columns
+    
+    return merged_g
