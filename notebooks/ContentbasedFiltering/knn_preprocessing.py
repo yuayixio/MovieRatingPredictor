@@ -82,6 +82,6 @@ def knn_preprocessing(omdb_columns):
     genres_grouped = genres_grouped.sort_values('imdbID').drop(columns={'genres'})
     merged_g = merged_data.merge(genres_grouped, how='right', on='imdbID')
     merged_g=merged_g.dropna()
-    #drop unused columns
+    
     
     return merged_g
