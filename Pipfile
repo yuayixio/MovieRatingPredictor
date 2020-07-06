@@ -17,6 +17,7 @@ scipy = "*"
 scikit-learn = "*"
 scikit-surprise = "*"
 nbdime = "*"
+ipynb = "*"
 
 [requires]
 python_version = "3.8"
