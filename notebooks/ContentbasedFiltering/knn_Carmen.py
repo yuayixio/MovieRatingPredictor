@@ -2,16 +2,22 @@ import pandas as pd
 import numpy as np
 import string
 from sklearn.neighbors import NearestNeighbors
-from scipy.sparse import csr_matrix
 from sklearn import preprocessing
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import MultiLabelBinarizer
-from sklearn.decomposition import PCA
 import time
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import LabelEncoder
+import matplotlib.pyplot as plt
+import unicodedata
+import sys
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from nltk.stem.porter import PorterStemmer
+
 kwargs = dict(random_state=42)
 
-def features(threshold_actors=20, ts_languages=10, year=True, runtime=True, imdbVotes=True, series=True, awards=True, genres=True, imdb_rating=True, roto_rating=True, pg_rating=True, threshold_keywords=10, threshold_plot=100, threshold_directors=5):
+def features(threshold_actors=20, ts_languages=10, year=True, runtime=True, imdbVotes=True, series=True, awards=True, genres=True, imdb_rating=True, roto_rating=True, pg_rating=True, threshold_keywords=10, threshold_plots=100, threshold_directors=5):
     # Preprocess omdb data
     omdb = pd.read_csv('../../data/preprocessed/omdb_cleaned.csv')
     # Fill NaN Runtime
@@ -105,7 +111,7 @@ def features(threshold_actors=20, ts_languages=10, year=True, runtime=True, imdb
         keywords = keywords.dropna()
         keywords[1] = keywords[1].apply(lambda x: x[1:-1])
         keywords[1] = keywords[1].apply(lambda x: x.split(','))
-        keywords[1] = keywords[1].apply(lambda x: x[0:threshold])
+        keywords[1] = keywords[1].apply(lambda x: x[0:threshold_keywords])
         keywords = keywords.explode(1)
         keywords_grouped = keywords.groupby(0)[1].apply(list).reset_index(name='keywords')
         keywords_grouped = keywords_grouped.rename(columns={0: 'imdbID'})
@@ -128,7 +134,7 @@ def features(threshold_actors=20, ts_languages=10, year=True, runtime=True, imdb
         plots['Plot'] = plots['Plot'].apply(lambda x: [porter.stem(word) for word in x])
         plots = plots.explode('Plot')
         plots_counts = pd.DataFrame(plots['Plot'].value_counts())
-        plots_selected = plots_counts[plots_counts['Plot']>threshold]
+        plots_selected = plots_counts[plots_counts['Plot']>threshold_plots]
         plots_selected = plots.set_index('Plot').loc[plots_selected.index].reset_index()
         plots_grouped = plots_selected.groupby('imdbID')['Plot'].apply(list).reset_index(name='plots')
         mlb = MultiLabelBinarizer()
@@ -139,7 +145,7 @@ def features(threshold_actors=20, ts_languages=10, year=True, runtime=True, imdb
     if threshold_directors != 0:
         directors = pd.read_csv('../../data/raw/directors.csv', sep=',')
         director_counts = pd.DataFrame(directors['directorID'].value_counts())
-        directors_selected = director_counts[director_counts['directorID']>threshold]
+        directors_selected = director_counts[director_counts['directorID']>threshold_directors]
         directors_selected = directors.set_index('directorID').loc[directors_selected.index].reset_index()
         # merge with imdbID, groupby imdbID and write the x most prominent directors as one entry per movie
         directors_grouped = directors_selected.merge(mapping, on='movieID').groupby('imdbID')['directorID'].apply(list).reset_index(name='directors')

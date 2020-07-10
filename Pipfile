@@ -18,6 +18,7 @@ scikit-learn = "*"
 scikit-surprise = "*"
 nbdime = "*"
 ipynb = "*"
+nltk = "*"
 
 [requires]
 python_version = "3.8"
