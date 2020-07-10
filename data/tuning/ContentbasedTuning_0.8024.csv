@@ -1,0 +1,19 @@
+,mean,knn_metric,Fold,RMSE,Testsize,data,set_k
+3,False,cosine,3,0.8024419836271849,25000,"Index(['user_id', 'imdbID', 'rating', 'imdbRating', 'Metacritic',
+       'RottenTomatoes', 'Awards', 'imdbVotes', 'Runtime', 'Year'],
+      dtype='object')",False
+5,False,cosine,5,0.8037034516183083,25000,"Index(['user_id', 'imdbID', 'rating', 'imdbRating', 'Metacritic',
+       'RottenTomatoes', 'Awards', 'imdbVotes', 'Runtime', 'Year'],
+      dtype='object')",False
+0,False,cosine,0,0.8081294943256773,25000,"Index(['user_id', 'imdbID', 'rating', 'imdbRating', 'Metacritic',
+       'RottenTomatoes', 'Awards', 'imdbVotes', 'Runtime', 'Year'],
+      dtype='object')",False
+1,False,cosine,1,0.8108374506167532,25000,"Index(['user_id', 'imdbID', 'rating', 'imdbRating', 'Metacritic',
+       'RottenTomatoes', 'Awards', 'imdbVotes', 'Runtime', 'Year'],
+      dtype='object')",False
+2,False,cosine,2,0.8127059645679336,25000,"Index(['user_id', 'imdbID', 'rating', 'imdbRating', 'Metacritic',
+       'RottenTomatoes', 'Awards', 'imdbVotes', 'Runtime', 'Year'],
+      dtype='object')",False
+4,False,cosine,4,0.8137513860677811,25000,"Index(['user_id', 'imdbID', 'rating', 'imdbRating', 'Metacritic',
+       'RottenTomatoes', 'Awards', 'imdbVotes', 'Runtime', 'Year'],
+      dtype='object')",False

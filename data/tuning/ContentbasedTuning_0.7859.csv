@@ -1,0 +1,13 @@
+,Fold,data,Testsize,set_k,mean,knn_metric,RMSE
+1,1,"Index(['imdbRating', 'Metacritic', 'RottenTomatoes', 'Awards', 'imdbVotes',
+       'Runtime'],
+      dtype='object')",1000,False,False,cosine,0.7858650270264592
+2,2,"Index(['imdbRating', 'Metacritic', 'RottenTomatoes', 'Awards', 'imdbVotes',
+       'Runtime'],
+      dtype='object')",1000,False,False,cosine,0.7898927444192968
+3,3,"Index(['imdbRating', 'Metacritic', 'RottenTomatoes', 'Awards', 'imdbVotes',
+       'Runtime'],
+      dtype='object')",1000,False,False,cosine,0.8000770049852692
+0,0,"Index(['imdbRating', 'Metacritic', 'RottenTomatoes', 'Awards', 'imdbVotes',
+       'Runtime'],
+      dtype='object')",1000,False,False,cosine,0.842290555080737

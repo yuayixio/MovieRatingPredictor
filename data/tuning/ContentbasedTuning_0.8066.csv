@@ -1,19 +1,55 @@
-,knn_metric,mean,Testsize,set_k,data,Fold,RMSE
-4,cosine,False,25000,False,"Index(['user_id', 'imdbID', 'rating', 'imdbRating', 'Metacritic',
-       'RottenTomatoes', 'Awards', 'imdbVotes'],
-      dtype='object')",4,0.8065899737812474
-5,cosine,False,25000,False,"Index(['user_id', 'imdbID', 'rating', 'imdbRating', 'Metacritic',
-       'RottenTomatoes', 'Awards', 'imdbVotes'],
-      dtype='object')",5,0.8109207028577036
-1,cosine,False,25000,False,"Index(['user_id', 'imdbID', 'rating', 'imdbRating', 'Metacritic',
-       'RottenTomatoes', 'Awards', 'imdbVotes'],
-      dtype='object')",1,0.8124221823716061
-0,cosine,False,25000,False,"Index(['user_id', 'imdbID', 'rating', 'imdbRating', 'Metacritic',
-       'RottenTomatoes', 'Awards', 'imdbVotes'],
-      dtype='object')",0,0.8126204306820846
-2,cosine,False,25000,False,"Index(['user_id', 'imdbID', 'rating', 'imdbRating', 'Metacritic',
-       'RottenTomatoes', 'Awards', 'imdbVotes'],
-      dtype='object')",2,0.8136117042462693
-3,cosine,False,25000,False,"Index(['user_id', 'imdbID', 'rating', 'imdbRating', 'Metacritic',
-       'RottenTomatoes', 'Awards', 'imdbVotes'],
-      dtype='object')",3,0.8143337476468395
+,set_k,knn_metric,data,RMSE,Fold,Testsize,mean
+4,False,cosine,"Index([       'user_id',         'imdbID',         'rating',           'Year',
+              'Runtime',     'imdbRating',      'imdbVotes', 'RottenTomatoes',
+           'Metacritic',         'Awards',                0,                1,
+                      2,                3,                4,                5,
+                      6,                7,                8,                9,
+                     10,               11,               12,               13,
+                     14,               15,               16,               17,
+                     18,               19],
+      dtype='object')",0.8065841394763531,4,25000,False
+1,False,cosine,"Index([       'user_id',         'imdbID',         'rating',           'Year',
+              'Runtime',     'imdbRating',      'imdbVotes', 'RottenTomatoes',
+           'Metacritic',         'Awards',                0,                1,
+                      2,                3,                4,                5,
+                      6,                7,                8,                9,
+                     10,               11,               12,               13,
+                     14,               15,               16,               17,
+                     18,               19],
+      dtype='object')",0.8091493658957033,1,25000,False
+0,False,cosine,"Index([       'user_id',         'imdbID',         'rating',           'Year',
+              'Runtime',     'imdbRating',      'imdbVotes', 'RottenTomatoes',
+           'Metacritic',         'Awards',                0,                1,
+                      2,                3,                4,                5,
+                      6,                7,                8,                9,
+                     10,               11,               12,               13,
+                     14,               15,               16,               17,
+                     18,               19],
+      dtype='object')",0.8105342698070404,0,25000,False
+5,False,cosine,"Index([       'user_id',         'imdbID',         'rating',           'Year',
+              'Runtime',     'imdbRating',      'imdbVotes', 'RottenTomatoes',
+           'Metacritic',         'Awards',                0,                1,
+                      2,                3,                4,                5,
+                      6,                7,                8,                9,
+                     10,               11,               12,               13,
+                     14,               15,               16,               17,
+                     18,               19],
+      dtype='object')",0.8127614463953474,5,25000,False
+2,False,cosine,"Index([       'user_id',         'imdbID',         'rating',           'Year',
+              'Runtime',     'imdbRating',      'imdbVotes', 'RottenTomatoes',
+           'Metacritic',         'Awards',                0,                1,
+                      2,                3,                4,                5,
+                      6,                7,                8,                9,
+                     10,               11,               12,               13,
+                     14,               15,               16,               17,
+                     18,               19],
+      dtype='object')",0.8138075824992091,2,25000,False
+3,False,cosine,"Index([       'user_id',         'imdbID',         'rating',           'Year',
+              'Runtime',     'imdbRating',      'imdbVotes', 'RottenTomatoes',
+           'Metacritic',         'Awards',                0,                1,
+                      2,                3,                4,                5,
+                      6,                7,                8,                9,
+                     10,               11,               12,               13,
+                     14,               15,               16,               17,
+                     18,               19],
+      dtype='object')",0.8158070484975276,3,25000,False

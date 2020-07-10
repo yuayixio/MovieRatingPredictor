@@ -52,7 +52,8 @@ def knn_preprocessing(omdb_columns):
 
     merged_data = ratings.merge(omdb, how='left', on='imdbID')
     merged_data = merged_data.drop(columns={'Unnamed: 0', 'Language'})
-
+    merged_data = merged_data[merged_data['imdbID']!= 720339]
+    
     # Comment Max: No NaN rows anymore - except for language for the missing movies
     merged_data.isna().sum()
 
