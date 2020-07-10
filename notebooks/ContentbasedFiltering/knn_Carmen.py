@@ -11,7 +11,7 @@ from sklearn.decomposition import PCA
 import time
 kwargs = dict(random_state=42)
 
-def features(threshold_actors=20, ts_languages=10, year=True, runtime=True, imdbVotes=True, series=True, awards=True, genres=True, rating=True, rated=True):
+def features(threshold_actors=20, ts_languages=10, year=True, runtime=True, imdbVotes=True, series=True, awards=True, genres=True, imdb_rating=True, roto_rating=True, pg_rating=True, threshold_keywords=10, threshold_plot=100, threshold_directors=5):
     # Preprocess omdb data
     omdb = pd.read_csv('../../data/preprocessed/omdb_cleaned.csv')
     # Fill NaN Runtime
@@ -88,15 +88,66 @@ def features(threshold_actors=20, ts_languages=10, year=True, runtime=True, imdb
         # enrich features
         features = features.merge(language, on='imdbID', how='left')
         names_features.append('Language: '+str(ts_languages))
-    
-    if rating==True:
+    if imdb_rating==True:
         imdb_ratings = omdb[['0', 'imdbRating']].rename(columns={'0':'imdbID'})
         features = features.merge(imdb_ratings, on='imdbID', how='left')
         names_features.append('imdb_ratings')
-    if rated==True:
+    if roto_rating==True:
+        roto_ratings = omdb[['0', 'Rotten Tomatoes']].rename(columns={'0':'imdbID'})
+        features = features.merge(roto_ratings, on='imdbID', how='left')
+        names_features.append('RottenTomatoes_Rating')
+    if pg_rating==True:
         PG_Rating = omdb[['0', 'PG_Rating']].rename(columns={'0':'imdbID'})
-        features = features.merge(imdb_ratings, on='imdbID', how='left')
+        features = features.merge(PG_Rating, on='imdbID', how='left')
         names_features.append('PG_Rating')
+    if threshold_keywords != 0:
+        keywords = pd.read_csv('keywordDict.csv', header=None, sep=';')
+        keywords = keywords.dropna()
+        keywords[1] = keywords[1].apply(lambda x: x[1:-1])
+        keywords[1] = keywords[1].apply(lambda x: x.split(','))
+        keywords[1] = keywords[1].apply(lambda x: x[0:threshold])
+        keywords = keywords.explode(1)
+        keywords_grouped = keywords.groupby(0)[1].apply(list).reset_index(name='keywords')
+        keywords_grouped = keywords_grouped.rename(columns={0: 'imdbID'})
+        mlb = MultiLabelBinarizer()
+        keywords_enc = pd.DataFrame(mlb.fit_transform(keywords_grouped['keywords']))
+        keywords_grouped = keywords_grouped.join(keywords_enc).drop(columns={'keywords'}) 
+        features = features.merge(keywords_grouped, on='imdbID', how='left')
+        names_features.append('Keywords: '+str(threshold_keywords))
+    if threshold_plots != 0:    
+        plots = pd.read_csv('../../data/preprocessed/plot.csv')
+        plots = plots.dropna()
+        punctuation = dict.fromkeys(i for i in range(sys.maxunicode)
+        if unicodedata.category(chr(i)).startswith('P'))
+        plots['Plot'] = [string.translate(punctuation) for string in plots['Plot']]
+        plots['Plot'] = plots['Plot'].apply(word_tokenize)
+        plots['Plot'] = plots['Plot'].apply(lambda x: [item.lower() for item in x])
+        stop_words = stopwords.words('english') + ['find', 'one', 'two', 'three', 'four','set', 'film','come', 'get', 'take', 'must', 'film', 'make', 'go', 'high', 'former', 'look','movie', 'make', 'go', 'high', 'us', 'use', 'whose', 'stop', 'sent', 'series', 'another', 'arrive', 'ii', 'bring', 'see', 'big', 'keep', 'cause', 'because', 'he', 'leave']
+        plots['Plot'] = plots['Plot'].apply(lambda x: [item for item in x if item not in stop_words])
+        porter = PorterStemmer()
+        plots['Plot'] = plots['Plot'].apply(lambda x: [porter.stem(word) for word in x])
+        plots = plots.explode('Plot')
+        plots_counts = pd.DataFrame(plots['Plot'].value_counts())
+        plots_selected = plots_counts[plots_counts['Plot']>threshold]
+        plots_selected = plots.set_index('Plot').loc[plots_selected.index].reset_index()
+        plots_grouped = plots_selected.groupby('imdbID')['Plot'].apply(list).reset_index(name='plots')
+        mlb = MultiLabelBinarizer()
+        plots_enc = pd.DataFrame(mlb.fit_transform(plots_grouped['plots']))
+        plots_grouped = plots_grouped.join(plots_enc).drop(columns={'plots'})
+        features = features.merge(plots_grouped, on='imdbID', how='left')
+        names_features.append('Plots: '+str(threshold_plots))
+    if threshold_directors != 0:
+        directors = pd.read_csv('../../data/raw/directors.csv', sep=',')
+        director_counts = pd.DataFrame(directors['directorID'].value_counts())
+        directors_selected = director_counts[director_counts['directorID']>threshold]
+        directors_selected = directors.set_index('directorID').loc[directors_selected.index].reset_index()
+        # merge with imdbID, groupby imdbID and write the x most prominent directors as one entry per movie
+        directors_grouped = directors_selected.merge(mapping, on='movieID').groupby('imdbID')['directorID'].apply(list).reset_index(name='directors')
+        mlb = MultiLabelBinarizer()
+        directors_enc = pd.DataFrame(mlb.fit_transform(directors_grouped['directors']))
+        directors_grouped = directors_grouped.join(directors_enc).drop(columns={'directors'})
+        features = features.merge(directors_grouped, on='imdbID', how='left')
+        names_features.append('Directors: '+str(threshold_directors))
     
     # fill nan values
     features = features.fillna(0)
