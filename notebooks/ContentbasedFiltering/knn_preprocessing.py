@@ -12,10 +12,6 @@ def knn_preprocessing(omdb_columns):
     # Select relevant columns
     omdb = omdb[omdb_columns]
 
-    # Add movies which could not be retrieved by omdb
-    imdb_ids = pd.DataFrame(movies['imdbID'].unique()).rename(columns={0: 'imdbID'})
-    omdb = imdb_ids.merge(omdb, how='left', on='imdbID')
-
      #Preprocess movie and genre data
     movies = movies.drop(columns={'spanishTitle','imdbPictureURL','rtID','rtPictureURL'})
     movies['imdbID'] = movies['imdbID'].str.replace(r'tt', '')
@@ -56,7 +52,8 @@ def knn_preprocessing(omdb_columns):
 
     merged_data = ratings.merge(omdb, how='left', on='imdbID')
     merged_data = merged_data.drop(columns={'Unnamed: 0', 'Language'})
-
+    merged_data = merged_data[merged_data['imdbID']!= 720339]
+    
     # Comment Max: No NaN rows anymore - except for language for the missing movies
     merged_data.isna().sum()
 
