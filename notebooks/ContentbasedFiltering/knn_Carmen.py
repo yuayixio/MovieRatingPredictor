@@ -17,7 +17,7 @@ from nltk.stem.porter import PorterStemmer
 
 kwargs = dict(random_state=42)
 
-def features(threshold_actors=20, ts_languages=10, year=True, runtime=True, imdbVotes=True, series=True, awards=True, genres=True, imdb_rating=True, roto_rating=True, pg_rating=True, threshold_keywords=10, threshold_plots=100, threshold_directors=5):
+def features(threshold_actors=20, ts_languages=10, year=True, runtime=True, imdbVotes=True, series=True, awards=True, genres=True, imdb_rating=True, roto_rating=True, pg_rating=True, threshold_newkeywords=200, threshold_plots=100, threshold_directors=5):
     # Preprocess omdb data
     omdb = pd.read_csv('../../data/preprocessed/omdb_cleaned.csv')
     # Fill NaN Runtime
@@ -106,20 +106,38 @@ def features(threshold_actors=20, ts_languages=10, year=True, runtime=True, imdb
         PG_Rating = omdb[['0', 'PG_Rating']].rename(columns={'0':'imdbID'})
         features = features.merge(PG_Rating, on='imdbID', how='left')
         names_features.append('PG_Rating')
-    if threshold_keywords != 0:
-        keywords = pd.read_csv('keywordDict.csv', header=None, sep=';')
-        keywords = keywords.dropna()
-        keywords[1] = keywords[1].apply(lambda x: x[1:-1])
-        keywords[1] = keywords[1].apply(lambda x: x.split(','))
-        keywords[1] = keywords[1].apply(lambda x: x[0:threshold_keywords])
-        keywords = keywords.explode(1)
-        keywords_grouped = keywords.groupby(0)[1].apply(list).reset_index(name='keywords')
-        keywords_grouped = keywords_grouped.rename(columns={0: 'imdbID'})
+    #if threshold_keywords != 0:
+        #keywords = pd.read_csv('keywordDict.csv', header=None, sep=';')
+        #keywords = keywords.dropna()
+        #keywords[1] = keywords[1].apply(lambda x: x[1:-1])
+        #keywords[1] = keywords[1].apply(lambda x: x.split(','))
+        #keywords[1] = keywords[1].apply(lambda x: x[0:threshold_keywords])
+        #keywords = keywords.explode(1)
+        #keywords_grouped = keywords.groupby(0)[1].apply(list).reset_index(name='keywords')
+        #keywords_grouped = keywords_grouped.rename(columns={0: 'imdbID'})
+        #mlb = MultiLabelBinarizer()
+        #keywords_enc = pd.DataFrame(mlb.fit_transform(keywords_grouped['keywords']))
+        #keywords_grouped = keywords_grouped.join(keywords_enc).drop(columns={'keywords'}) 
+        #features = features.merge(keywords_grouped, on='imdbID', how='left')
+        #names_features.append('Keywords: '+str(threshold_keywords))
+    if  threshold_newkeywords != 0:
+        omdb = pd.read_csv('../../data/preprocessed/omdb_cleaned.csv')
+        newkeywords = pd.read_csv('../ContentbasedFiltering/keywordDict.csv', header=None, sep=';')
+        newkeywords = newkeywords.dropna()
+        newkeywords[1] = newkeywords[1].apply(lambda x: x[1:-1])
+        newkeywords[1] = newkeywords[1].apply(lambda x: x.split(','))
+        newkeywords = newkeywords.explode(1)
+        newkeywords_counts = pd.DataFrame(newkeywords[1].value_counts())
+        newkeywords_selected = newkeywords_counts[newkeywords_counts[1]>threshold_newkeywords]
+        newkeywords_selected = newkeywords.set_index(1).loc[newkeywords_selected.index].reset_index()
+        # print(newkeywords)
+        newkeywords_selected = newkeywords_selected.rename(columns= {0: 'imdbID'})
+        newkeywords_grouped = newkeywords_selected.groupby('imdbID')[1].apply(list).reset_index(name='newkeywords')
         mlb = MultiLabelBinarizer()
-        keywords_enc = pd.DataFrame(mlb.fit_transform(keywords_grouped['keywords']))
-        keywords_grouped = keywords_grouped.join(keywords_enc).drop(columns={'keywords'}) 
-        features = features.merge(keywords_grouped, on='imdbID', how='left')
-        names_features.append('Keywords: '+str(threshold_keywords))
+        newkeywords_enc = pd.DataFrame(mlb.fit_transform(newkeywords_grouped['newkeywords']))
+        newkeywords_grouped = newkeywords_grouped.join(newkeywords_enc).drop(columns={'newkeywords'})
+        features = features.merge(newkeywords_grouped, on='imdbID', how='left')
+        names_features.append('NEWKeywords: '+str(threshold_newkeywords))
     if threshold_plots != 0:    
         plots = pd.read_csv('../../data/preprocessed/plot.csv')
         plots = plots.dropna()
