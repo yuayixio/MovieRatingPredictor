@@ -1,0 +1,5 @@
+,Features,Parameters_knn,RMSE,Sample_size,Runtime
+0,"['Year', 'Series', 'Awards', 'Actors: 30', 'Genres', 'Language: 20', 'RottenTomatoes_Rating', 'PG_Rating']","[('mean', True), ('knn_metric', 'cosine'), ('set_k', False)]",0.8811207384789997,50000,4458.2246153354645
+0,"['Year', 'Series', 'Awards', 'Actors: 30', 'Genres', 'Language: 20', 'RottenTomatoes_Rating', 'PG_Rating']","[('mean', True), ('knn_metric', 'cosine'), ('set_k', False)]",0.8831651476680653,10000,475.2057933807373
+1,"['Year', 'Series', 'Awards', 'Actors: 30', 'Genres', 'Language: 20', 'RottenTomatoes_Rating', 'PG_Rating']","[('mean', True), ('knn_metric', 'cosine'), ('set_k', False)]",0.8874345027161786,50000,2561.1525421142583
+2,"['Year', 'Series', 'Awards', 'Actors: 30', 'Genres', 'Language: 20', 'RottenTomatoes_Rating', 'PG_Rating']","[('mean', True), ('knn_metric', 'cosine'), ('set_k', False)]",0.8992164658745969,10000,580.83633685112
