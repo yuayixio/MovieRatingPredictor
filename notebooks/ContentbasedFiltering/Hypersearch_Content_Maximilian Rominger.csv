@@ -1,0 +1,275 @@
+,Features,Parameters_knn,RMSE,Sample_size,Runtime
+0,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Directors: 10']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8350185857892508,10000,175.84323596954346
+1,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8362175194922544,10000,149.441175699234
+2,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8374894423352562,10000,222.03625249862668
+3,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.837845332251683,10000,229.85985445976257
+4,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8417765659097114,100000,1665.0189037322998
+5,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8471859819322057,10000,136.79128170013428
+6,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8473601329957291,10000,226.7049777507782
+7,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8475732949026998,10000,224.72317743301392
+8,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8480653156898651,10000,145.6244697570801
+9,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8483003980261897,10000,141.26834917068481
+10,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.856306530048189,10000,229.92266869544983
+11,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8569933179754557,10000,140.4305872917175
+12,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8573576576267959,10000,230.3338921070099
+13,"['Series', 'imdb_ratings']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8584287301781139,10000,138.30066108703613
+14,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8590751287430219,10000,221.40916657447812
+15,"['Series', 'Genres', 'imdb_ratings', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8631670891837928,10000,227.72190237045288
+16,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8661071871273008,10000,227.3055329322815
+17,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8662800092273143,10000,224.6811394691468
+18,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Keywords: 10', 'Directors: 5']","[('mean', False), ('knn_metric', 'cosine'), ('set_k', False)]",0.8670635348652577,10000,4428.344368457794
+19,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8671606151271797,10000,140.82195234298706
+20,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8698260205828654,10000,136.62413835525513
+21,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8706231106823777,10000,226.84411382675168
+22,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Directors: 10']","[('mean', False), ('knn_metric', 'cosine'), ('set_k', False)]",0.8719980361293251,10000,198.80215859413147
+23,"['Series', 'Genres', 'imdb_ratings', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8742282703631132,10000,227.86003613471985
+24,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8769586347004252,10000,135.60119986534121
+25,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Keywords: 10', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'cosine'), ('set_k', False)]",0.8783551485191959,10000,4425.252536058426
+26,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8794237758006865,10000,221.1749539375305
+27,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8808842558996419,10000,227.2965247631073
+28,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'cosine'), ('set_k', False)]",0.8836012885105222,10000,258.18927550315857
+29,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.883688196013924,10000,140.5967493057251
+30,"['Series', 'Awards', 'Genres', 'imdb_ratings']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8857306125954227,10000,140.33750367164612
+31,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'cosine'), ('set_k', False)]",0.885837693987074,10000,291.2484004497528
+32,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8861545322712074,10000,222.48514485359192
+33,"['Series', 'Genres', 'RottenTomatoes_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8863513727619796,10000,215.7750468254089
+34,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8867038232913015,10000,140.5627179145813
+35,"['Series', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8878359598582344,10000,227.36557841300964
+36,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Keywords: 10', 'Directors: 10']","[('mean', False), ('knn_metric', 'cosine'), ('set_k', False)]",0.8881024078970607,10000,4287.9509069919595
+37,"['Series', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8883361177960284,10000,140.82294225692752
+38,"['Series', 'Genres', 'imdb_ratings', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8885246447145488,10000,140.80092453956604
+39,"['Series', 'Awards', 'Genres', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8900157534016836,10000,227.3545775413513
+40,"['Series', 'Awards', 'imdb_ratings', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8903461393089147,10000,219.1951634883881
+41,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'cosine'), ('set_k', False)]",0.8904856919752425,100000,2751.6394336223602
+42,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Keywords: 10', 'Plots: 50', 'Directors: 5']","[('mean', False), ('knn_metric', 'cosine'), ('set_k', False)]",0.8907793286139712,10000,4477.785512447357
+43,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 50', 'Directors: 5']","[('mean', False), ('knn_metric', 'cosine'), ('set_k', False)]",0.8926578093958529,10000,364.01470828056335
+44,"['Series', 'Genres', 'imdb_ratings']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8938876492323029,10000,140.5116696357727
+45,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100', 'Directors: 10']","[('mean', False), ('knn_metric', 'cosine'), ('set_k', False)]",0.8940424065396659,10000,239.21598696708682
+46,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'cosine'), ('set_k', False)]",0.8954261628066426,10000,252.85526394844047
+47,"['Series', 'imdb_ratings', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8964068526920226,10000,135.45707893371582
+48,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8973237912260366,10000,194.42875814437863
+49,"['Series', 'Awards', 'imdb_ratings', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8978560711842907,10000,222.63829326629642
+50,"['Series', 'imdb_ratings', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.8994963744410771,10000,224.35385060310364
+51,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 50', 'Directors: 10']","[('mean', False), ('knn_metric', 'cosine'), ('set_k', False)]",0.9011690252896164,10000,303.49255967140203
+52,"['Series', 'Genres', 'imdb_ratings', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.902690660300174,10000,260.2264363765717
+53,"['Series', 'imdb_ratings', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9039783068858224,10000,223.95347809791562
+54,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9051304750389744,10000,183.94913911819458
+55,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9055907951569002,10000,257.47293210029596
+56,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Keywords: 10', 'Plots: 50', 'Directors: 10']","[('mean', False), ('knn_metric', 'cosine'), ('set_k', False)]",0.9067493763402936,10000,4503.524357795714
+57,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Keywords: 10', 'Plots: 100', 'Directors: 10']","[('mean', False), ('knn_metric', 'cosine'), ('set_k', False)]",0.9067598689760474,10000,4510.8710498809805
+58,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9078758518076256,10000,182.74003100395203
+59,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9090024003501692,10000,258.4555191993713
+60,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9093589623599856,10000,263.886771440506
+61,"['Series', 'Awards', 'imdb_ratings', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9096846888769242,10000,178.14486503601074
+62,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9099473000077852,10000,275.1918702125549
+63,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9107179995294052,10000,257.42089676857
+64,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9115250511436858,10000,261.3834958076477
+65,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.911867433307188,10000,184.77488017082214
+66,"['Series', 'Genres', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9119796934414864,10000,263.35558915138245
+67,"['Series', 'Awards', 'imdb_ratings', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9121298895884216,10000,136.08664059638977
+68,"['Series', 'imdb_ratings', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9123976561862313,10000,260.07430720329285
+69,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9126967800904368,10000,263.04599595069885
+70,"['Series', 'Genres', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9129034504312712,10000,225.55694389343262
+71,"['Series', 'Awards', 'Genres', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9132748679668192,10000,184.281432390213
+72,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9137050675530825,10000,262.8328022956848
+73,"['Series', 'Awards', 'imdb_ratings']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9137638409694208,10000,136.3779060840607
+74,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 50', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.914769453720398,10000,331.7412993907928
+75,"['Series', 'imdb_ratings', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.914780749858869,10000,177.86361050605774
+76,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9149124110648243,10000,263.43335938453674
+77,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.915299678882166,10000,270.4997792243957
+78,"['Series', 'Awards', 'imdb_ratings', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9153951803465395,10000,259.5077924728394
+79,"['Series', 'Genres', 'RottenTomatoes_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.916679945812736,10000,263.21616125106806
+80,"['Series', 'Awards', 'imdb_ratings', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9169869040870456,10000,178.95058798789978
+81,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100', 'Directors: 10']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9169947985222724,10000,214.16869378089905
+82,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9174293639995796,10000,267.7232568264008
+83,"['Series', 'Genres', 'RottenTomatoes_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9178094274294586,10000,140.47562694549558
+84,"['Series', 'Awards', 'Genres', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.918491820167738,10000,182.608912229538
+85,"['Series', 'RottenTomatoes_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.918538578445378,10000,195.9870765209198
+86,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9187887156786068,10000,183.72893834114075
+87,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9188898506110424,10000,184.06824731826785
+88,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 50', 'Directors: 10']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9194136101664396,10000,271.92930483818054
+89,"['Series', 'Genres', 'imdb_ratings', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9196011183860652,10000,183.38863015174863
+90,"['Series', 'RottenTomatoes_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9201217407697831,10000,139.5808250904083
+91,"['Series', 'Awards', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9202780818845132,10000,178.07380080223083
+92,"['Series', 'RottenTomatoes_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9203791697659393,10000,264.4723036289215
+93,"['Series', 'imdb_ratings', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9206176141401836,10000,263.1511025428772
+94,"['Series', 'Awards', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.921333359123193,10000,136.34888815879822
+95,"['Series', 'Awards', 'RottenTomatoes_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.92156025260722,10000,246.7491991519928
+96,"['Series', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9218366352026014,10000,183.30655527114868
+97,"['Series', 'Genres', 'imdb_ratings', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9218436636009698,10000,251.1822185516357
+98,"['Series', 'Awards']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9218684090668088,10000,136.25680494308472
+99,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9221146528768944,10000,178.5252020359039
+100,"['Series', 'imdb_ratings', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9221671546334372,10000,179.1737995147705
+101,"['Series', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.922485571798322,10000,183.317565202713
+102,"['Series', 'Genres', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9224965483525632,10000,226.88515043258667
+103,"['Series', 'Awards', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.922962605410524,10000,256.8353641033173
+104,"['Series', 'Awards', 'RottenTomatoes_Rating', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9232503258770822,10000,221.9026153087616
+105,"['Series', 'Genres', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9235748719418648,10000,183.11737442016602
+106,"['Series', 'Genres', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9236502365366541,10000,184.60573482513428
+107,"['Series', 'Awards', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9237695832079478,10000,258.89623641967773
+108,"['Series', 'Awards', 'Genres', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.92398063893967,10000,261.81989288330084
+109,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9245535815387792,10000,179.34394478797913
+110,"['Series', 'Awards', 'imdb_ratings', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9245808269091916,10000,258.7160646915436
+111,"['Series', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9249010181738851,10000,268.073575258255
+112,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9256299410284642,10000,181.8472282886505
+113,"['Series', 'Awards', 'RottenTomatoes_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9259239713868158,10000,178.10482835769653
+114,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9259782617113284,10000,182.66796565055847
+115,"['Series', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9266101174080402,10000,139.18846869468692
+116,"['Series', 'Awards', 'Genres', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9274624112263976,10000,254.0257995128632
+117,"['Series', 'Genres', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9279375913973148,10000,366.0055515766144
+118,"['Series', 'Genres', 'imdb_ratings', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9284114093506524,10000,182.8991949558258
+119,"['Series', 'Awards', 'Genres', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9288140756545672,10000,226.3386459350586
+120,"['Series', 'Awards', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9290239030802552,10000,359.73885416984564
+121,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.929572834188283,10000,400.38279581069946
+122,"['Series', 'Genres', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9296145748336488,10000,262.0270817279816
+123,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.930238999918696,10000,136.79929780960086
+124,"['Series', 'Awards', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9314927698794456,10000,259.06538891792303
+125,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Keywords: 10', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9315595290241906,10000,3919.978990077973
+126,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9320575800252606,10000,183.46568751335144
+127,"['Series', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9324950927564382,10000,264.1950504779816
+128,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9325844117274154,10000,366.0135564804077
+0,"['Series', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9334783374238377,10000,406.2150959968567
+129,"['Series', 'Awards', 'Genres', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9336614676718102,10000,140.61675667762756
+130,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9338847057718694,10000,401.6539475917816
+131,"['Series', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9347127313958346,10000,400.5509488582611
+132,"['Series', 'Awards', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.934983098052852,10000,223.4760448932648
+133,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.935362400347164,10000,258.28668355941767
+134,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9355093161621352,10000,357.9523856639862
+135,"['Series', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9356987565079012,10000,401.977242231369
+136,"['Series', 'RottenTomatoes_Rating', 'PG_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9359097005552216,10000,270.0403618812561
+137,"['Series', 'Genres', 'RottenTomatoes_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9360789633931252,10000,182.41374397277832
+138,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9366782234843748,10000,261.08682441711426
+139,"['Series', 'Awards', 'Genres', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.937398146412542,10000,400.88424015045166
+140,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9374825236126072,10000,484.68839478492737
+141,"['Series', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9376790672063582,10000,421.9163591861725
+142,"['Series', 'Genres', 'imdb_ratings', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9377424299408376,10000,403.04325532913214
+143,"['Series', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9379224588017078,10000,228.7438395023346
+144,"['Series', 'Genres', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9393834350935968,10000,481.57156229019165
+145,"['Series', 'Awards', 'RottenTomatoes_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9395548989480406,10000,222.6683099269867
+146,"['Series', 'Awards', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9397392050843548,10000,178.64330887794497
+147,"['Series', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9397414416029626,10000,365.69427490234375
+148,"['Series', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9398749634181364,10000,365.74831366539
+149,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9399625338520708,10000,393.1719465255737
+150,"['Series', 'Genres', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9403505849950607,10000,403.2113633155823
+151,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9405169836393646,10000,404.5475785732269
+152,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9408529339461108,10000,484.9506509304047
+153,"['Series', 'Awards', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9408692802008344,10000,397.03874588012695
+154,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9409599538839574,10000,178.79045057296753
+155,"['Series', 'Awards', 'Genres']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9410430351238008,10000,140.08527517318728
+156,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9411614988225602,10000,403.9860665798187
+157,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9414443089417186,10000,362.8506817817688
+158,"['Series', 'RottenTomatoes_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9419211332551052,10000,241.211168050766
+159,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9420894666626668,10000,398.7242865562439
+160,"['Series', 'Awards', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9422253816928436,10000,397.1818766593933
+161,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9422277051641612,10000,434.76038885116577
+162,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9424676798327124,10000,366.97843503952026
+163,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9425339870047568,10000,365.58116126060486
+164,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Keywords: 10', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9426205136066952,10000,3894.927071094513
+165,"['Series', 'Awards', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9431911050385542,10000,394.5725030899048
+166,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9432879756602384,10000,480.6096796989441
+167,"['Series', 'RottenTomatoes_Rating', 'PG_Rating', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9433155180157948,10000,228.9410183429718
+168,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9434312892578004,10000,399.7772436141968
+169,"['Series', 'Genres', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9437203469086612,10000,404.7827911376953
+170,"['Series', 'imdb_ratings', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9437455699236458,10000,407.56832194328314
+171,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9437650941744116,10000,400.45384883880615
+172,"['Series', 'Genres', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9438983815154812,10000,401.35868000984186
+173,"['Series', 'Awards', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9439713116265528,10000,178.91856670379642
+174,"['Series', 'Genres', 'imdb_ratings', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9440440190226445,10000,479.4726450443268
+175,"['Series', 'Awards', 'RottenTomatoes_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9442530983528328,10000,361.74768018722534
+176,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9442590170121477,10000,402.6088297367096
+177,"['Series', 'Genres', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9444217015060252,10000,481.53052496910095
+178,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9445131811097092,10000,443.3588328361511
+179,"['Series', 'Genres', 'imdb_ratings', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9446406745907248,10000,366.49999809265137
+180,"['Series', 'Awards', 'Genres', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9447379370404696,10000,363.05787992477417
+181,"['Series', 'Awards', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9447716743016132,10000,482.1470758914948
+182,"['Series', 'Awards', 'imdb_ratings', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9449166641405288,10000,479.5797433853149
+183,"['Series', 'Awards', 'Genres', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9449797300597316,10000,438.2071526050568
+184,"['Series', 'Genres', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9451992442495742,10000,446.1884129047394
+185,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.945234934860986,10000,442.5991504192352
+186,"['Series', 'Awards', 'Genres', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9453840156207308,10000,401.76831245422363
+187,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9455347876854362,10000,445.2135174274445
+188,"['Series', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9455887827445174,10000,437.6676626205444
+189,"['Series', 'Awards', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9456073079547664,10000,396.5312824249268
+190,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9457439032674992,10000,358.4947237968445
+191,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9463105597151568,10000,401.1925203800202
+192,"['Series', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9463710653366764,10000,363.14194679260254
+193,"['Series', 'Awards', 'imdb_ratings', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9464232630008316,10000,403.6114993095398
+194,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9467536952465369,10000,475.0776619911194
+195,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9467696019325104,10000,365.47007179260254
+196,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Keywords: 10', 'Plots: 50', 'Directors: 10']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9470620822437104,10000,4079.471246242523
+197,"['Series', 'RottenTomatoes_Rating', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9470640384973288,10000,140.07127261161804
+198,"['Series', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9472244834948236,10000,500.22833704948425
+199,"['Series', 'imdb_ratings', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.947491359362052,10000,365.58116340637207
+200,"['Series', 'Awards', 'Genres', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9477216904678778,10000,481.0205581188202
+201,"['Series', 'imdb_ratings', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9478512270773718,10000,493.4443504810333
+202,"['Series', 'Awards', 'imdb_ratings', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9479156089330096,10000,366.6345837116242
+203,"['Series', 'Awards', 'Genres', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9479257728055884,10000,363.10191941261286
+204,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9480457675100346,10000,395.23710894584656
+205,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9481473614300214,10000,435.27149367332464
+206,"['Series', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9482721645603984,10000,490.1206505298615
+207,"['Series', 'Awards', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.948298272482683,10000,395.1570358276367
+208,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Keywords: 10', 'Plots: 100', 'Directors: 10']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9483273331374352,10000,3969.047614574432
+209,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9493838745135724,10000,436.10825395584106
+210,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.949430071376834,10000,450.17003083229065
+211,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9495331265810424,10000,475.9974989891052
+212,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9495711999829776,10000,488.43378925323486
+213,"['Series', 'Genres', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9501840181446732,10000,437.98394870758057
+214,"['Series', 'Genres', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9502758108917908,10000,363.1719825267792
+215,"['Series', 'Genres', 'imdb_ratings', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9504668439840548,10000,447.3764922618866
+216,"['Series', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9505149064041836,10000,370.230340719223
+217,"['Series', 'PG_Rating', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.950621415132716,10000,182.85313367843628
+218,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9510055587931828,10000,438.93881702423096
+219,"['Series', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9511474337722944,10000,499.5739192962647
+220,"['Series', 'Awards', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9511477962911165,10000,474.16082859039307
+221,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.951165181644199,10000,477.7711091041565
+222,"['Series', 'Genres', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9513287709472622,10000,399.2457594871521
+223,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9513636833056056,10000,361.7146589756012
+224,"['Series', 'Awards', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9514387165085908,10000,432.2987837791443
+225,"['Series', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9515473427240452,10000,407.3861563205719
+226,"['Series', 'Awards', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9515546243972536,10000,476.5449860095978
+227,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9517267635857588,10000,445.26956915855413
+228,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9517287677608024,10000,363.1729836463928
+229,"['Series', 'Awards', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9518333728717412,10000,438.7816834449768
+230,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9518859901056994,10000,485.81941270828247
+231,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9519776738885762,10000,436.7928645610809
+232,"['Series', 'Awards', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9519899624397208,10000,356.0545063018799
+233,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Keywords: 10', 'Plots: 50', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.952498276479576,10000,3973.342703580856
+234,"['Series', 'Awards', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9525480154066236,10000,479.2874867916107
+235,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'Keywords: 10', 'Directors: 10']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9525692450167044,10000,3833.427759408951
+236,"['Series', 'Awards', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9526897161865232,10000,358.83503317832947
+237,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9527648686648926,10000,483.2660927772522
+238,"['Series', 'RottenTomatoes_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9528628867408464,10000,376.6211965084076
+239,"['Series', 'Awards', 'Genres', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9534668154695334,10000,480.6947567462921
+240,"['Series', 'Awards', 'RottenTomatoes_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9535354217478966,10000,135.5097050666809
+241,"['Series', 'Awards', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9542865897650006,10000,363.6944489479065
+242,"['Series', 'Genres', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9546688180592116,10000,474.10476922988886
+243,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.954959764458736,10000,518.456657409668
+244,"['Series', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9549650647056576,10000,398.76131939888
+245,"['Series', 'Awards', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9552549625570319,10000,442.79431986808777
+246,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9552684170709178,10000,480.0651876926422
+247,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9553394927206946,10000,485.09376215934753
+248,"['Series', 'Genres', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9561895413125238,10000,140.9970932006836
+249,"['Series', 'Genres', 'RottenTomatoes_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9567376266298728,10000,365.4910900592804
+250,"['Series', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9567535430011692,10000,448.08112168312067
+251,"['Series', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9568282746555288,10000,485.4390757083893
+252,"['Series', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9569771847373773,10000,449.73063039779663
+253,"['Series', 'Awards', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.957088134111322,10000,436.3744876384735
+254,"['Series', 'Awards', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9574050927741388,10000,361.3043129444122
+255,"['Series', 'Awards', 'Genres', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9576202707797328,10000,443.9453659057617
+256,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9576478169205926,10000,491.60726380348206
+257,"['Series', 'Awards', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9581042443282036,10000,223.19478845596316
+258,"['Series', 'Genres', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9581217675588256,10000,441.6382701396942
+259,"['Series', 'Awards', 'Genres', 'imdb_ratings', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9585049794918152,10000,445.2375495433808
+260,"['Series', 'Awards', 'imdb_ratings', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9586935639782256,10000,451.7551636695862
+261,"['Series', 'Genres', 'PG_Rating', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9593378430862584,10000,364.8314805030823
+262,"['Series', 'Genres', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9600626446923668,10000,481.41542053222656
+263,"['Series', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9600724738403159,10000,449.9087932109833
+264,"['Series', 'Awards', 'imdb_ratings', 'PG_Rating', 'NEWKeywords: 150', 'Plots: 100', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9615747131597112,10000,472.1830224990845
+265,"['Series', 'RottenTomatoes_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9619122665751408,10000,477.2426290512085
+266,"['Series', 'Awards', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9619593125556716,10000,443.1916809082031
+267,"['Series', 'imdb_ratings', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9620263963634956,10000,452.6732964515686
+268,"['Series', 'Genres', 'RottenTomatoes_Rating', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9635763541006488,10000,447.93199634552
+269,"['Series', 'Genres', 'PG_Rating', 'NEWKeywords: 150', 'Directors: 5']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9703139220649264,10000,435.65583395957947
+270,"['Series', 'Awards', 'NEWKeywords: 150']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9734005778206865,10000,360.54259371757513
+271,"['Series', 'Awards', 'RottenTomatoes_Rating', 'PG_Rating']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9752936384036258,10000,135.90948033332822
+272,"['Series', 'Genres']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9792069311830758,10000,140.30948686599731
