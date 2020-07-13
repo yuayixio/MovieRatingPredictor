@@ -1,0 +1,17 @@
+,Features,Parameters_knn,RMSE,Sample_size,Runtime
+0,"['Runtime', 'Awards', 'Actors: 20', 'RottenTomatoes_Rating', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9601334978568952,10000,3785.159165143967
+1,"['Year', 'Awards', 'Actors: 20', 'Genres', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9607519867169946,10000,3622.9307475090027
+0,"['Awards', 'Actors: 20', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9621718559626341,10000,3652.736558675766
+2,"['Runtime', 'Awards', 'Actors: 20', 'Genres', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.96356800119604,10000,3929.474186182022
+3,"['Year', 'Runtime', 'Awards', 'Actors: 20', 'Genres', 'RottenTomatoes_Rating', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9636998069164104,10000,3678.86164021492
+4,"['Year', 'Awards', 'Actors: 20', 'RottenTomatoes_Rating', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9645411847437726,10000,3638.064586162567
+5,"['Year', 'Runtime', 'Awards', 'Actors: 20', 'Genres', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9649320537978194,10000,3649.115357875824
+6,"['Runtime', 'Awards', 'Actors: 20', 'Genres', 'RottenTomatoes_Rating', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9660351754018012,10000,3619.485698223114
+7,"['Awards', 'Actors: 20', 'Genres', 'RottenTomatoes_Rating', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9671238896613468,10000,3668.320314884186
+8,"['Awards', 'Actors: 20', 'Genres', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9723349686523844,10000,3695.458206653595
+9,"['Year', 'Runtime', 'Awards', 'Actors: 20', 'RottenTomatoes_Rating', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9733442763268,10000,3662.58149933815
+10,"['Year', 'Runtime', 'Awards', 'Actors: 20', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9740577244633818,10000,3642.211561203003
+11,"['Year', 'Awards', 'Actors: 20', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9758968386805104,10000,3645.752145051956
+12,"['Runtime', 'Awards', 'Actors: 20', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9787313355066108,10000,3769.3772869110107
+13,"['Year', 'Awards', 'Actors: 20', 'Genres', 'RottenTomatoes_Rating', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9789378475539968,10000,3639.111073732376
+14,"['Awards', 'Actors: 20', 'RottenTomatoes_Rating', 'NewKeywords: 10', 'Plots: 70', 'Directors: 7']","[('mean', False), ('knn_metric', 'minkowski'), ('set_k', False)]",0.9797431832866588,10000,3652.4897723197937
