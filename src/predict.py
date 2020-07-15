@@ -12,7 +12,8 @@ def predict_ratings():
     :return: returns test_data and test_data_with_rating
     """
     # read in test data
-    test_data = pd.read_csv("../data/modeling/test/test.csv")
+    #test_data = pd.read_csv("../data/modeling/test/test.csv")
+    test_data = pd.read_csv("../data/modeling/test/ratings_testset.csv")
 
     # read in stored movies to map movieID to unique imdbID
     movies = pd.read_csv("../data/modeling/train/movies_id_updated.csv", sep=',')

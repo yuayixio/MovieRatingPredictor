@@ -41,23 +41,26 @@ def make_prediction(test_data_imdb):
     # predict ratings
     pred_content = []
     no_of_ratings = []
+    train_data = train_data[train_data['imdbID'] != 'tt0720339']
     for row in test_data_imdb.itertuples():
         # select user and movie
+
         imdbID = row.imdbID
         userID = row.user_id
-        # select ratings of the user
-        ratings_user = train_data.loc[train_data['user_id'] == userID]
-        ratings_user.reset_index(inplace=True, drop=True)
-
-        # select features of corresponding movies and convert to array
-        features_user = np.array(features.loc[ratings_user['imdbID']])
-        features_movie = np.array(features.loc[imdbID])
 
         # compute predictions
         if imdbID == 'tt0720339':
-            #exclude outlier movie without information
+            # exclude outlier movie without information
             pred_content.append(svd.predict(userID, imdbID).est)
         else:
+            # select ratings of the user
+            ratings_user = train_data.loc[train_data['user_id'] == userID]
+            ratings_user.reset_index(inplace=True, drop=True)
+            print(ratings_user)
+            # select features of corresponding movies and convert to array
+            features_user = np.array(features.loc[ratings_user['imdbID']])
+            features_movie = np.array(features.loc[imdbID])
+
             pred_content.append(predict_movie_rating(ratings_user, features_user, features_movie))
         # store the number of predictions of a user:
         no_of_ratings.append(ratings_user.shape[0])
@@ -76,7 +79,7 @@ def weighted_prediction(knn_colab, svd, content_based, no_of_ratings):
     df['svd'] = svd
     df['content_based'] = content_based
     df['no_of_ratings'] = no_of_ratings
-    #Apply calculation formula for prediction
+    # Apply calculation formula for prediction
     df['rating'] = df.apply(weighting, axis=1)
     return df[['rating']]
 
