@@ -1,5 +1,5 @@
 """
 
-Additional features are generated and simultaneously preproccessed within the preprocessing script.
+Additional features are generated and simultaneously preprocessed within the preprocessing script.
 
 """
