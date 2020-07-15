@@ -7,7 +7,7 @@ from surprise import KNNWithMeans, SVD
 
 from sklearn.neighbors import NearestNeighbors
 
-from src import preprocessing
+import preprocessing
 
 
 def make_prediction(test_data_imdb):
@@ -31,7 +31,7 @@ def make_prediction(test_data_imdb):
     # define features for content-based models
     params_features = {'threshold_actors': 0, 'ts_languages': 0, 'year': True, 'runtime': True, 'imdbvotes': True,
                        'series': False, 'awards': False, 'genres': True, 'imdb_rating': True, 'roto_rating': True,
-                       'pg_rating': True, 'threshold_newkeywords': 0, 'threshold_plots': 0, 'threshold_directors': 200}
+                       'pg_rating': True, 'threshold_newkeywords': 0, 'threshold_plots': 0, 'threshold_directors': 0}
     # load features
     features, names = preprocessing.features(**params_features)
 
@@ -55,6 +55,7 @@ def make_prediction(test_data_imdb):
 
         # compute predictions
         if imdbID == 'tt0720339':
+            #exclude outlier movie without information
             pred_content.append(svd.predict(userID, imdbID).est)
         else:
             pred_content.append(predict_movie_rating(ratings_user, features_user, features_movie))
@@ -69,18 +70,19 @@ def make_prediction(test_data_imdb):
 
 
 def weighted_prediction(knn_colab, svd, content_based, no_of_ratings):
+    # Convert to DataFrame for better handling
     df = pd.DataFrame()
     df['knn_colab'] = knn_colab
     df['svd'] = svd
     df['content_based'] = content_based
     df['no_of_ratings'] = no_of_ratings
-
-    df['rating'] = df.apply(f, axis=1)
+    #Apply calculation formula for prediction
+    df['rating'] = df.apply(weighting, axis=1)
     return df[['rating']]
 
 
 # calculate weighted prediction with optimal weights
-def f(x):
+def weighting(x):
     if x['no_of_ratings'] <= 350:
         return .0 * x['knn_colab'] + .88 * x['svd'] + .12 * x['content_based']
     elif 350 < x['no_of_ratings'] <= 650:
@@ -120,13 +122,13 @@ def predict_movie_rating(ratings_user, features_user, features_movie):
 
 # function that computes a rating based on the neighbors
 def compute_rating(neighbors, distances):
-    # Gewichtung der Bewertung der Nachbarn je nach Distanz
+    # weighting the rating of the neighbors based on their distance to selected movie
     pred = sum(neighbors * ((1 / (distances[0] + 0.000001) ** 1) / (sum((1 / (distances[0] + 0.000001) ** 1)))))
 
     return float(pred)
 
 
-# Use optimal k based on # rated movies
+# Use optimal k based on # rated movies approx. modified around sqrt(ratings_k)
 def adjust_k(ratings_k):
     adjusted_k = 10
     r_size = len(ratings_k)

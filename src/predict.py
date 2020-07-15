@@ -1,7 +1,10 @@
 import pandas as pd
 
-from src.train import make_prediction
+from train import make_prediction
 
+def main():
+    test_data, ratings = predict_ratings()
+    ratings.to_csv("predicted_ratings.csv")
 
 def predict_ratings():
     """
@@ -23,3 +26,6 @@ def predict_ratings():
     test_data_with_rating = test_data_with_rating[['user_id', 'movieID', 'rating']]
 
     return test_data, test_data_with_rating
+
+if __name__ == "__main__":
+    main()
