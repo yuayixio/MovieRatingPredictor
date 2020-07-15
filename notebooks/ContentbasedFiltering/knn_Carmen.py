@@ -1,14 +1,8 @@
 import pandas as pd
 import numpy as np
-import string
 from sklearn.neighbors import NearestNeighbors
 from sklearn import preprocessing
 from sklearn.preprocessing import MultiLabelBinarizer
-import time
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.preprocessing import LabelEncoder
-import matplotlib.pyplot as plt
 import unicodedata
 import sys
 from nltk.tokenize import word_tokenize
