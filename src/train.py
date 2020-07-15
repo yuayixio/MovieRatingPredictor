@@ -87,13 +87,13 @@ def weighted_prediction(knn_colab, svd, content_based, no_of_ratings):
 # calculate weighted prediction with optimal weights
 def weighting(x):
     if x['no_of_ratings'] <= 350:
-        return .0 * x['knn_colab'] + .88 * x['svd'] + .12 * x['content_based']
+        return .0 * x['knn_colab'] + .85 * x['svd'] + .15 * x['content_based']
     elif 350 < x['no_of_ratings'] <= 650:
-        return .0 * x['knn_colab'] + .88 * x['svd'] + .12 * x['content_based']
+        return .0 * x['knn_colab'] + .84 * x['svd'] + .16 * x['content_based']
     elif 650 < x['no_of_ratings'] <= 1050:
-        return .22 * x['knn_colab'] + .60 * x['svd'] + .19 * x['content_based']
+        return .0 * x['knn_colab'] + .81 * x['svd'] + .19 * x['content_based']
     elif 1050 < x['no_of_ratings']:
-        return .21 * x['knn_colab'] + .60 * x['svd'] + .19 * x['content_based']
+        return .0 * x['knn_colab'] + .78 * x['svd'] + .22 * x['content_based']
 
 
 def predict_movie_rating(ratings_user, features_user, features_movie):
