@@ -56,7 +56,6 @@ def make_prediction(test_data_imdb):
             # select ratings of the user
             ratings_user = train_data.loc[train_data['user_id'] == userID]
             ratings_user.reset_index(inplace=True, drop=True)
-            print(ratings_user)
             # select features of corresponding movies and convert to array
             features_user = np.array(features.loc[ratings_user['imdbID']])
             features_movie = np.array(features.loc[imdbID])

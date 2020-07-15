@@ -27,13 +27,15 @@ BDA-analytics-challenge
 - Matriculation Number: 1954661
 
 ## Special Stuff
-To run the model place the test dataset in the "../data/modeling/test/test.csv" folder and run  predict_ratings() function in predict.y in the src folder.
+This repository contains a recommender system for movies.
+The model gets movieIDs and user_ids and predicts the user rating for each of them.
+
+To run the model place the test dataset in the "../data/modeling/test/" folder and run  predict_ratings() function in predict.py in the src folder. If the function is not called from another script, additional lines need to be added to predict.py (See previous commits).
 The test dataset is not allowed to have an index. Movies that originally weren't rated were excluded (The cold-start problem is not considered).
 
 The function returns test_data, test_data_with_rating ('user_id', 'movieID' and 'rating').
 
-The model uses a collaborative filtering algorithm (SVD from the Surprise Library) and a self-implemented content-based approach algorithm which uses a NearestNeighbor Search.
-
+The model uses collaborative filtering algorithms (SVD, KNNMeans from the Surprise Library) and a self-implemented content-based approach algorithm which uses a NearestNeighbor Search.
 
 ## Project Organization
 ------------
@@ -130,41 +132,6 @@ The model uses a collaborative filtering algorithm (SVD from the Surprise Librar
 │       │   └── rmses_calculated.csv
 │       ├── ContentBased
 │       │   ├── .DS_Store
-│       │   ├── ContentbasedTuning_0.7113.csv
-│       │   ├── ContentbasedTuning_0.7212.csv
-│       │   ├── ContentbasedTuning_0.7668.csv
-│       │   ├── ContentbasedTuning_0.7859.csv
-│       │   ├── ContentbasedTuning_0.7986.csv
-│       │   ├── ContentbasedTuning_0.7994.csv
-│       │   ├── ContentbasedTuning_0.7998.csv
-│       │   ├── ContentbasedTuning_0.8007.csv
-│       │   ├── ContentbasedTuning_0.8012.csv
-│       │   ├── ContentbasedTuning_0.8017.csv
-│       │   ├── ContentbasedTuning_0.8018.csv
-│       │   ├── ContentbasedTuning_0.8022.csv
-│       │   ├── ContentbasedTuning_0.8024.csv
-│       │   ├── ContentbasedTuning_0.8026.csv
-│       │   ├── ContentbasedTuning_0.8029.csv
-│       │   ├── ContentbasedTuning_0.8035.csv
-│       │   ├── ContentbasedTuning_0.8036.csv
-│       │   ├── ContentbasedTuning_0.8038.csv
-│       │   ├── ContentbasedTuning_0.8043.csv
-│       │   ├── ContentbasedTuning_0.8046.csv
-│       │   ├── ContentbasedTuning_0.8048.csv
-│       │   ├── ContentbasedTuning_0.8051.csv
-│       │   ├── ContentbasedTuning_0.8053.csv
-│       │   ├── ContentbasedTuning_0.8054.csv
-│       │   ├── ContentbasedTuning_0.8063.csv
-│       │   ├── ContentbasedTuning_0.8065.csv
-│       │   ├── ContentbasedTuning_0.8066.csv
-│       │   ├── ContentbasedTuning_0.8068.csv
-│       │   ├── ContentbasedTuning_0.8072.csv
-│       │   ├── ContentbasedTuning_0.8075.csv
-│       │   ├── ContentbasedTuning_0.8077.csv
-│       │   ├── ContentbasedTuning_0.808.csv
-│       │   ├── ContentbasedTuning_0.8081.csv
-│       │   ├── ContentbasedTuning_0.8235.csv
-│       │   ├── ContentbasedTuning_0.8363.csv
 │       │   ├── Ergebnisse_Carmen_ContentBased.csv
 │       │   ├── Hypersearch_Content_Carmen.csv
 │       │   ├── Hypersearch_Content_FlorianGrabe.csv
