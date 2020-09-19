@@ -5,26 +5,7 @@ BDA-analytics-challenge
 
 ![Class Overview](data/UML Diagram.png "Class Overview")
 
-## Group Members:
-- Forename: Carmen
-- Surname: Müller
-- Matriculation Number: 1955404
 
-- Forename: Florian
-- Surname: Gräbe
-- Matriculation Number: 1957182
-
-- Forename: Felix
-- Surname: Xiong
-- Matriculation Number: 1973655
-
-- Forename: Maximilian
-- Surname: Rominger
-- Matriculation Number: 1955244
-
-- Forename: Christin
-- Surname: Scheib
-- Matriculation Number: 1954661
 
 ## Special Stuff
 Explain special stuff here (e.g., things an evaluator has to know to evaluate your submission)
